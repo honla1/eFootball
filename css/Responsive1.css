@@ -1,0 +1,233 @@
+@media (max-width : 1000px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      background: rgb(0,249,255);
+      background: linear-gradient(0deg, rgba(0,249,255,1) 0%, rgba(32,0,150,1) 40%);  
+    }
+  
+    .banner {
+      background-image: url(https://www.konami.com/efootball/s/img/main_page_1.png?v=587);
+      background-position: center;
+      color: #fff;
+      height: 500px;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    main div {
+      align-items: center;
+      padding-bottom: 0px;
+    }
+  
+    .btn1 {
+      display: inline-block;
+      padding: 0.9rem 1.8rem;
+      font-size: 35px;
+      font-weight: 700;
+      color: white;
+      border: 3px solid rgb(252, 70, 100);
+      cursor:default;
+      position: relative;
+      background-color: transparent;
+      text-decoration: none;
+      overflow: hidden;
+      z-index: 1;
+      font-family: inherit;
+     }
+  
+    div h1 {
+      font-size: 50px;
+    }
+  
+    div p {
+      font-size: 30px;
+    }
+  
+    main div h1{
+      font-size: 27px;
+      width: 350px;
+    }
+  
+    main div p{
+      padding-bottom: 0px;
+    }
+    .logo a {
+      text-decoration: none;
+    
+      /* From Uiverse.io by cssbuttons-io */
+      button {
+        --glow-color: rgb(217, 176, 255);
+        --glow-spread-color: rgba(191, 123, 255, 0.781);
+        --enhanced-glow-color: rgb(231, 206, 255);
+        --btn-color: rgb(100, 61, 136);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 1em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+      }
+    
+      button::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: .7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+      }
+    
+      button:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 2em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+      }
+    
+      button:active {
+        box-shadow: 0 0 0.6em .25em var(--glow-color),
+          0 0 2.5em 2em var(--glow-spread-color),
+          inset 0 0 .5em .25em var(--glow-color);
+      }
+    }
+  
+    .logo a {
+      text-decoration: none;
+  
+      /* From Uiverse.io by cssbuttons-io */
+      button2 {
+        --glow-color: rgb(217, 176, 255);
+        --glow-spread-color: rgba(191, 123, 255, 0.781);
+        --enhanced-glow-color: rgb(231, 206, 255);
+        --btn-color: rgb(100, 61, 136);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 1em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+      }
+  
+      button2::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: .7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+      }
+  
+      button2:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 2em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+      }
+  
+      button2:active {
+        box-shadow: 0 0 0.6em .25em var(--glow-color),
+          0 0 2.5em 2em var(--glow-spread-color),
+          inset 0 0 .5em .25em var(--glow-color);
+      }
+    }
+  
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+    button {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      background: #000096;
+      font-family: "K2D", sans-serif;
+      box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      cursor: pointer;
+      border: none;
+      padding: 20px;
+    }
+  
+    button:after {
+      content: " ";
+      width: 0%;
+      height: 100%;
+      background: #ffd401;
+      position: absolute;
+      transition: all 0.4s ease-in-out;
+      right: 0;
+    }
+  
+    button:hover::after {
+      right: auto;
+      left: 0;
+      width: 100%;
+    }
+  
+    button span {
+      text-align: center;
+      text-decoration: none;
+      width: 100%;
+      padding: 18px 50px;
+      color: #ffd401;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      z-index: 20;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    button:hover span {
+      color: #183153;
+      animation: scaleUp 0.3s ease-in-out;
+    }
+  
+    @keyframes scaleUp {
+      0% {
+        transform: scale(1);
+      }
+  
+      50% {
+        transform: scale(0.95);
+      }
+  
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+    footer p {
+      font-size: 20px;
+    }
+  
+  }

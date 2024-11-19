@@ -1,0 +1,32 @@
+@media (max-width : 1000px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    
+    main div img{
+        position:relative;
+        width: 300px;
+        padding: 0px;
+        padding-top: -10px;
+        justify-content: center;
+    }
+
+
+    main div h1 {
+        font-size: 30px;
+        font-family: "K2D", sans-serif;
+        color: red;
+        background: transparent;
+        text-align: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        backdrop-filter: blur(30px);
+        height: 100px;
+        width: 300px;
+        border: 2px solid pink;
+        border-radius: 20px;
+        }
+    }

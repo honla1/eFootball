@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  /* display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red;  */
+
+  padding: 15px;
+  align-items: center;
+  background: rgb(255, 252, 0);
+  background: linear-gradient(0deg, rgba(255, 252, 0, 1) 23%, rgba(0, 150, 0, 1) 100%);
+}
+
+
+.logo a {
+  text-decoration: none;
+
+  /* From Uiverse.io by cssbuttons-io */
+  button {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+      0 0 4em 1em var(--glow-spread-color),
+      inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+  }
+
+  button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+      0 0 4em 2em var(--glow-spread-color),
+      inset 0 0 .75em .25em var(--glow-color);
+  }
+
+  button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+      0 0 2.5em 2em var(--glow-spread-color),
+      inset 0 0 .5em .25em var(--glow-color);
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: none;
+  text-decoration: none;
+  color: #f20202;
+}
+
+.banner {
+  background-image: url(../img/Example/main_page_1.png);
+  background-position: center;
+  color: #fff;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main div {
+  align-items: center;
+}
+
+.banner-info {
+  color: rgb(68, 215, 42);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.banner-info h1{
+  backdrop-filter: blur(1.5px);
+  border-radius: 500px;
+  padding: 20px;
+  font-size: 60px;
+  .noto-sans-thai-looped-thin {
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    }
+}
+
+.banner-info h1 p{
+  border-radius: 1000px;
+  padding: 7px;
+  font-size: 35px;
+  .noto-sans-thai-looped-thin {
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    }
+}
+
+.banner-info p {
+  text-align: center;
+  font-family: "K2D", sans-serif;
+  text-decoration: none;
+  color: #1b1a10;
+}
+
+section div p {
+  .noto-sans-thai-looped-black {
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    font-weight: 900px;
+    font-size: 1000px;
+    font-style: normal;
+  }
+}
+
+.banner-info img {
+  width: 240px;
+  border-radius: none;
+}
+
+/* ------------------------------------- */
+/* From Uiverse.io by abrahamcalsin */
+
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #000096;
+  font-family: "K2D", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  padding: 20px;
+}
+
+button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 50px;
+  color: #ffd401;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ------------------------------------- */
+/* Start 1 */
+
+
+.btn1 {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 45px;
+  font-weight: 700;
+  color: white;
+  border: 3px solid rgb(252, 70, 100);
+  width: auto;
+  border-radius: 10px;
+  cursor:default;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+ }
+main b h1 {
+  color: rgb(3, 20, 6);
+
+}
+
+
+main div p {
+  padding-bottom: 50px;
+}
+
+main div n{
+  padding-top: 20000px;
+  font-size: 2000px;
+}
+
+
+
+main b {
+  font-size: 50px;
+  font-family: "K2D", sans-serif;
+  font-weight: 3000;
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(186, 0, 0);
+  position: static;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: none;
+}
+
+main b img {
+  width: 100%;
+  /* padding-top: 10px; */
+  border-radius: 30px;
+}
+
+/* End 1 */
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: rgb(254, 255, 1);
+  background: radial-gradient(circle, rgba(254, 255, 1, 1) 0%, rgba(6, 34, 237, 1) 60%);
+}
+
+main div a {
+  font-size: 40px;
+  font-family: "K2D", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(250, 67, 0);
+
+  /* border: solid 5px rgb(25, 0, 255);
+      padding: 5px; */
+
+}
+
+div.download {
+  padding: 10px;
+}
+
+main div .download span {
+  button {
+    position: relative;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    border-radius: 20px;
+    background: #000096;
+    font-family: "K2D", sans-serif;
+    font-weight: 40px;
+    font-style: normal;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    /* padding: 20px; */
+  }
+}
+
+main span f {
+  font-family: eFootball Stencil;
+}
+
+/* main div .download {
+  padding: 0px;
+} */
+
+main div {
+  padding: 20px;
+}
+
+main div h1 {
+  font-size: 40px;
+  font-family: "K2D", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding-top: 20px;
+}
+
+.k2d-extralight {
+  font-family: "K2D", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.k2d-light {
+  font-family: "K2D", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.k2d-regular {
+  font-family: "K2D", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.k2d-medium {
+  font-family: "K2D", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.k2d-semibold {
+  font-family: "K2D", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.k2d-bold {
+  font-family: "K2D", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.k2d-extrabold {
+  font-family: "K2D", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.k2d-thin-italic {
+  font-family: "K2D", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.k2d-extralight-italic {
+  font-family: "K2D", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.k2d-light-italic {
+  font-family: "K2D", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.k2d-regular-italic {
+  font-family: "K2D", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.k2d-medium-italic {
+  font-family: "K2D", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.k2d-semibold-italic {
+  font-family: "K2D", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.k2d-bold-italic {
+  font-family: "K2D", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.k2d-extrabold-italic {
+  font-family: "K2D", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+main div p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgb(250, 67, 0);
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+
+main img {
+  width: 100%;
+  padding-top: 10px;
+  border-radius: 30px;
+}
+
+footer {
+  font-style: normal;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+

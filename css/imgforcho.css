@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    /* display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red;  */
+  
+    padding: 30px;
+    align-items: center;
+    background: rgb(255, 252, 0);
+    background: linear-gradient(0deg, rgba(255, 252, 0, 1) 23%, rgba(0, 150, 0, 1) 100%);
+  }
+  
+  
+main {
+    background: rgba(6, 34, 237, 1);
+    /* background: linear-gradient(0deg, rgba(0,249,255,1) 0%, rgba(32,0,150,1) 40%); */
+}
+.banner {
+    background-image: url(https://www.konami.com/efootball/s/img/main_page_1.png?v=587);
+    background-position: center;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main div {
+    align-items: center;
+  }
+  
+  .banner-info {
+    color: rgb(68, 215, 42);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 40px;
+  
+    .noto-sans-thai-looped-thin {
+      font-family: "Noto Sans Thai Looped", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+    }
+  
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+  
+  }
+
+
+main div p{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+  /* From Uiverse.io by BHARGAVPATEL1244 */ 
+button1 {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #66ff66;
+  color: ghostwhite;
+ }
+ 
+ button1 span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+ }
+ 
+ button1:hover span {
+  color: black;
+ }
+ 
+ button1::before,
+ button1::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 105%;
+  z-index: 0;
+ }
+ 
+ button1::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+ }
+ 
+ button1:hover::before {
+  transform: translate3d(100%, 0, 0);
+ }
+ 
+main div a {
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+  
+  
+  .banner-info p {
+    text-align: center;
+    font-family: "K2D", sans-serif;
+    text-decoration: none;
+    color: #1b1a10;
+  }
+  
+  section div p {
+    .noto-sans-thai-looped-black {
+      font-family: "Noto Sans Thai Looped", sans-serif;
+      font-weight: 900px;
+      font-size: 1000px;
+      font-style: normal;
+    }
+  }
+  
+  
+.menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu li {
+    margin-left: 10px;
+  }
+  
+  .menu li a {
+    display: none;
+    text-decoration: none;
+    color: #f20202;
+  }
+  
+  .banner-info img {
+    width: 240px;
+    border-radius: none;
+  } 
+  .logo a {
+    text-decoration: none;
+  
+    /* From Uiverse.io by cssbuttons-io */
+    button2 {
+      --glow-color: rgb(217, 176, 255);
+      --glow-spread-color: rgba(191, 123, 255, 0.781);
+      --enhanced-glow-color: rgb(231, 206, 255);
+      --btn-color: rgb(100, 61, 136);
+      border: .25em solid var(--glow-color);
+      padding: 1em 3em;
+      color: var(--glow-color);
+      font-size: 15px;
+      font-weight: bold;
+      background-color: var(--btn-color);
+      border-radius: 1em;
+      outline: none;
+      box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+      text-shadow: 0 0 .5em var(--glow-color);
+      position: relative;
+      transition: all 0.3s;
+    }
+  
+    button2::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--glow-spread-color);
+      filter: blur(2em);
+      opacity: .7;
+      transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    }
+  
+    button2:hover {
+      color: var(--btn-color);
+      background-color: var(--glow-color);
+      box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    }
+  
+    button2:active {
+      box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+    }
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgb(0,249,255);
+    background: linear-gradient(0deg, rgba(0,249,255,1) 0%, rgba(6, 34, 237, 1) 50%);  
+  }
+  
+  
+main img {
+    width: 95%;
+    padding-top: 10px;
+    border-radius: 30px;
+    padding-bottom: 20px
+  }
+  
+  footer {
+    font-style: normal;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }

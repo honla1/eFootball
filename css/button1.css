@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  main{
+    background-color: gray;
+  }
+  
+  
+  main div h1 {
+    font-size: 40px;
+    font-family: "K2D", sans-serif;
+    color: red;
+    background: transparent;
+    text-align: center;
+    align-items: center;
+    padding-top: 45px;
+    backdrop-filter: blur(30px);
+    height: 150px;
+    width: 450px;
+    border: 2px solid gray;
+    border-radius: 8px;
+  }
+  
+  
+  
+  nav {
+    /* display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red;  */
+  
+    padding: 15px;
+    align-items: center;
+    background: rgb(255, 252, 0);
+    background: linear-gradient(0deg, rgba(255, 252, 0, 1) 23%, rgba(0, 150, 0, 1) 100%);
+    
+  }
+  
+  
+  
+  .logo a {
+    text-decoration: none;
+  
+    /* From Uiverse.io by cssbuttons-io */
+    button {
+      --glow-color: rgb(217, 176, 255);
+      --glow-spread-color: rgba(191, 123, 255, 0.781);
+      --enhanced-glow-color: rgb(231, 206, 255);
+      --btn-color: rgb(100, 61, 136);
+      border: .25em solid var(--glow-color);
+      padding: 1em 3em;
+      color: var(--glow-color);
+      font-size: 15px;
+      font-weight: bold;
+      background-color: var(--btn-color);
+      border-radius: 1em;
+      outline: none;
+      box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+      text-shadow: 0 0 .5em var(--glow-color);
+      position: relative;
+      transition: all 0.3s;
+    }
+  
+    button::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--glow-spread-color);
+      filter: blur(2em);
+      opacity: .7;
+      transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    }
+  
+    button:hover {
+      color: var(--btn-color);
+      background-color: var(--glow-color);
+      box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    }
+  
+    button:active {
+      box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+    }
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  
+  
+  .menu li {
+    margin-left: 10px;
+  }
+  
+  .menu li a {
+    display: none;
+    text-decoration: none;
+    color: #f20202;
+  }
+main div h3{
+  font-size: 50px;
+}
+
+main div .box{
+  filter: drop-shadow(1px 1px 20px rgb(0, 0, 0)) ;
+
+}
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;  
+    width: 100%;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5);
+    color: yellow;
+    /* border: none; */
+  }
+  
+  .box:hover:before {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  button {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: #000096;
+  }
+  .box2 {
+    width: 450px;
+    background:transparent;
+    /* border: solid rgb(255, 0, 0); */
+    height: 150px;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    /* padding-top: 47px; */
+    align-content: center;
+    text-align: center;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+    margin-left: 35px;
+    }
+  
+  
+  .box2:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;  
+    width: 100%;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+    }
+  
+  .box2:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    }
+  
+  .box2:hover {
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5);
+    color: #db2525;
+    border-radius: 10px;
+    }
+  
+  .box2:hover:before {
+    border-color: #14fef7;
+    border-radius: 10px;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+    }
+  
+  .box2:hover:after {
+    border-color: #14fef7;
+    border-radius: 10px;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+    }
+    button2 {
+        color: #ef8644;
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        background: transparent;
+        border: #000096;
+        }
+        main {
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background: rgb(254, 255, 1);
+            background: radial-gradient(circle, rgba(254, 255, 1, 1) 0%, rgba(6, 34, 237, 1) 60%);
+          }
+          main div a {
+            font-size: 40px;
+            font-family: "K2D", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-decoration: none;
+            color: rgb(250, 67, 0);
+            div.download {
+                padding: 10px;
+              }            
